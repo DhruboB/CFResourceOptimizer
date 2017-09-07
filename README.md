@@ -11,7 +11,7 @@ This script takes login credential and target account, org and space information
 
 Arguments : <username> <organisation> <space> <account> <apikey>
 
-Example: ./login2Blmx.sh dhruba.bhattacharjee@in.ibm.com TestOrg TestSpace 3d20d8erfb5c3603873ab212b867sj79 syonGHKG8zBOKV3LxCx3A020jncTJ-21jvxas4gsd9aI
+Example: ./login2Blmx.sh me@dhrubo.in TestOrg TestSpace 3d20d8erfb5c3603873ab212b867sj79 syonGHKG8zBOKV3LxCx3A020jncTJ-21jvxas4gsd9aI
 
 # startResources.sh  &  stopResources.sh
 
@@ -19,8 +19,8 @@ This script takes login credential and target account, org and space information
 
 Arguments : <username> <organisation> <space> <account> <apikey>
 
-Example: ./startResources.sh dhruba.bhattacharjee@in.ibm.com TestOrg TestSpace 3d20d8erfb5c3603873ab212b867sj79 syonGHKG8zBOKV3LxCx3A020jncTJ-21jvxas4gsd9aI
-Example: ./stopResources.sh dhruba.bhattacharjee@in.ibm.com TestOrg TestSpace 3d20d8erfb5c3603873ab212b867sj79 syonGHKG8zBOKV3LxCx3A020jncTJ-21jvxas4gsd9aI
+Example: ./startResources.sh me@dhrubo.in TestOrg TestSpace 3d20d8erfb5c3603873ab212b867sj79 syonGHKG8zBOKV3LxCx3A020jncTJ-21jvxas4gsd9aI
+Example: ./stopResources.sh me@dhrubo.in TestOrg TestSpace 3d20d8erfb5c3603873ab212b867sj79 syonGHKG8zBOKV3LxCx3A020jncTJ-21jvxas4gsd9aI
 
 # startCFApps.sh & stopCFApps.sh  
 
@@ -39,3 +39,7 @@ Arguments : <space>
 
 Example: ./startContainers.sh TestSpace 
 Example: ./stopContainers.sh TestSpace
+
+# scanContainers.sh
+
+This script scan all the container images in Bluemix registry one by one and if finds any CRITICAL flag , it further inspects the image for more finer detail. tHis scripts needs to be executed after ./login2Blmx.sh  
