@@ -1,7 +1,7 @@
 # CFResourceOptimizer
-This project is to support DevOps pipleline for Bluemix / Cloud Foundry resource optimization. 
+This project is to support DevOps pipeline for Bluemix / Cloud Foundry resource optimization.
 
-It has few basic scripts which can be integrated with Jenkins or any CI tool to start and stop CF applications and Bluemix Containers in regular basis. For example, when Developers are not using Bluemix resources in Development environment all the resources can be shutdown. This also helps to scan all container images from Bluemxi registry.
+It has few basic scripts which can be integrated with Jenkins or any CI tool to start and stop CF applications and Bluemix Containers in regular basis. For example, when Developers are not using Bluemix resources in Development environment all the resources can be shutdown.
 
 Thus, it will greatly reduce the usage cost of the Bluemix account. Note, scripts should be modified according to specific requirement. You are free to do so. Cheers :)
 
